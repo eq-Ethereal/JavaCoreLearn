@@ -4,6 +4,21 @@ import java.util.Scanner;
 
 public class Task2 {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int firstNumber = scanner.nextInt();
+        int secondNumber = scanner.nextInt();
+        int result = firstNumber;
+        if (firstNumber >= secondNumber) {
+            System.out.println("Некорректный ввод");
+        } else {
+            for (int i = 0; i < secondNumber - firstNumber; i++) {
+                if ((result % 10) == 0) {
+                } else if (result % 5 == 0) {
+                    System.out.print(result + " ");
+                }
+                result += 1;
+            }
+        }
 
     }
 }
