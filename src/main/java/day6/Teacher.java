@@ -35,8 +35,8 @@ public class Teacher {
         else if (grade == 3) gradeEv = "удовлетворительно";
         else if (grade == 2) gradeEv = "неудовлетворительно";
         else gradeEv = "ChtoTiTakoe";
-        System.out.println("Преподаватель " + this.name + " оценил студента с именем " + student.getName() +
-                " по предмету " + this.subject + " на оценку " + gradeEv);
+        System.out.println("Преподаватель " + name + " оценил студента с именем " + student.getName() +
+                " по предмету " + subject + " на оценку " + gradeEv);
     }
 
     private int gradeCalculate() {
