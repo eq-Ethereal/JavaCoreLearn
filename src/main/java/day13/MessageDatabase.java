@@ -1,5 +1,7 @@
 package day13;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -23,7 +25,7 @@ public class MessageDatabase {
             }
         }
     }
-    private static boolean isHaveDialog(User u1, User u2, Message message){
+    private static boolean isHaveDialog(User u1, User u2, @NotNull Message message){
         return ((message.getReceiver().equals(u1) & message.getSender().equals(u2)) || message.getReceiver().equals(u2) & message.getSender().equals(u1));
     }
 }
